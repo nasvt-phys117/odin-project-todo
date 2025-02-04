@@ -32,5 +32,7 @@ displayTaskBtn.addEventListener('click', (event)=> {
   .textContent = "Tasks:";
 
   const outputText = taskOutput.appendChild(document.createElement("p"));
-  outputText.innerHTML = outToDoTaskTitle;
+  outputText.innerHTML = "<b>Task:</b> " + outToDoTaskTitle + "<br> <b> Description:</b> "+outTodoTaskDescription;
+  toDoTaskTitle.value = '';
+  toDoTaskDescription.value = '';
 });
